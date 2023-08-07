@@ -16,15 +16,7 @@ from model_encoder import Similarity_space, DCTDetectionModel
 from tester import Tester
 
 
-import warnings
 
-
-random.seed(510)
-
-warnings.filterwarnings("ignore")
-
-logging.set_verbosity_warning()
-logging.set_verbosity_error()
 
 TRAIN = "train"
 DEV = "eval"
@@ -99,7 +91,7 @@ def main(args):
         trainer=Trainer(args, classifier, Sim_encoder, DCT_encoder, G_a, L_a, tr_set, tr_size, dev_set, dev_size)
         trainer.train()
     else: #test
-        tester=Tester(args, Sim_encoder, classifier, test_set,test_size,datasets["eval"])
+        tester=Tester(args, Sim_encoder, classifier, test_set,test_size,datasets["test"])
         tester.test()
 
         
