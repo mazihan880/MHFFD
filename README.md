@@ -2,6 +2,8 @@
 
 This is the code for the paper "Cross-modal Ambiguity Learning for Multimodal Fake News Detection".
 
+![MHFFD](MHFFD.png)
+
 ## Abstract
 
 Detecting fake news on social media has become a crucial task in combating online misinformation and countering malicious propaganda. Existing methods rely on semantic consistency across modalities to fuse features and determine news authenticity. However, cunning  fake news publisher manipulate image to ensure a high level of semantic consistency between the news post and image, making it more difficult to distinguish fake news and posing challenges for existing fake news detection models.
