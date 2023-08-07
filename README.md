@@ -21,14 +21,44 @@ We evaluated MHFFD using two widely adopted benchmarks for fake news detection: 
 
 - The Weibo dataset was collected from official Weibo debunking systems. Posts verified by the authoritative Chinese news agency, Xinhua News Agency
 
+## Requirement
+
+```
+torch
+numpy
+pickle
+transformers
+torchvision
+scipy
+sklearn
+nltk
+tqdm
+```
+
+## Run Code
+
+1. Preprocess
+
+- ```
+  cd preprocess
+  ```
+
+- ```
+  python preprocess.py 
+  ```
+
+2. Traning
+
+- ```
+  python main.py
+  ```
+
 ## Experiment Overview
 
 |  Method   | Twitter Acc | Twitter F1 | Weibo Acc | Weibo F1  |
 | :-------: | :---------: | :--------: | :-------: | :-------: |
-|    RA     |    0.664    |   0.664    |   0.772   |   0.769   |
 |   EANN    |    0.648    |   0.639    |   0.795   |   0.802   |
 |   MAVE    |    0.745    |   0.744    |   0.824   |   0.823   |
-|   MKEMN   |    0.715    |   0.684    |   0.814   |   0.805   |
 |   SAFE    |    0.762    |   0.761    |   0.816   |   0.817   |
 | SpotFake  |    0.777    |   0.761    |   0.892   |   0.836   |
 | SpotFake+ |    0.790    |   0.788    |   0.870   |   0.871   |
@@ -36,4 +66,3 @@ We evaluated MHFFD using two widely adopted benchmarks for fake news detection: 
 |   CAFE    |    0.806    |   0.806    |   0.840   |   0.840   |
 |   MCAN    |   _0.873_   |  _0.865_   |  _0.899_  | **0.899** |
 | **MHFFD** |  **0.933**  | **0.928**  | **0.926** |  _0.888_  |
-
