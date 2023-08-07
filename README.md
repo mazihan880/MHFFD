@@ -39,19 +39,13 @@ tqdm
 
 1. Preprocess
 
-- ```
-  cd preprocess
-  ```
+- `cd preprocess`
 
-- ```
-  python preprocess.py 
-  ```
+- `python preprocess.py `
 
 2. Traning
 
-- ```
-  python main.py
-  ```
+- ` python main.py`
 
 ## Experiment Overview
 
