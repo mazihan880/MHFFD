@@ -1,6 +1,6 @@
 # MHFFD
 
-This is the code for the paper "Cross-modal Ambiguity Learning for Multimodal Fake News Detection".
+This is the code for the ICME2024 paper "Cross-modal Ambiguity Learning for Multimodal Fake News Detection".
 
 ![MHFFD](MHFFD.png)
 
